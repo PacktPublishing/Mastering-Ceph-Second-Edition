@@ -1,0 +1,31 @@
+nodes = [
+  { :hostname => 'kube1',  :ip => '192.168.0.51', :box => 'xenial64', :ram => 2048, :osd => 'yes' },
+  { :hostname => 'kube2',  :ip => '192.168.0.52', :box => 'xenial64', :ram => 2048, :osd => 'yes' },
+  { :hostname => 'kube3',  :ip => '192.168.0.53', :box => 'xenial64', :ram => 2048, :osd => 'yes' }
+]
+
+
+Vagrant.configure("2") do |config|
+  nodes.each do |node|
+    config.vm.define node[:hostname] do |nodeconfig|
+      nodeconfig.vm.box = "bento/ubuntu-16.04"
+      nodeconfig.vm.hostname = node[:hostname]
+      nodeconfig.vm.network :private_network, ip: node[:ip]
+
+
+      memory = node[:ram] ? node[:ram] : 4096;
+      nodeconfig.vm.provider :virtualbox do |vb|
+        vb.customize [
+          "modifyvm", :id,
+          "--memory", memory.to_s,
+        ]
+        if node[:osd] == "yes"        
+          vb.customize [ "createhd", "--filename", "disk_osd-#{node[:hostname]}", "--size", "10000" ]
+          vb.customize [ "storageattach", :id, "--storagectl", "SATA Controller", "--port", 3, "--device", 0, "--type", "hdd", "--medium", "disk_osd-#{node[:hostname]}.vdi" ]
+        end
+      end
+    end
+    config.hostmanager.enabled = true
+    config.hostmanager.manage_guest = true
+  end
+end
