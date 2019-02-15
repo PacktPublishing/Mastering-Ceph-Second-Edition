@@ -1,0 +1,13 @@
+       [global]
+       ioengine=libaio
+       randrepeat=0
+       invalidate=0
+       rw=randwrite
+       bs=4k
+       direct=1
+       time_based=1
+       runtime=30
+       numjobs=1
+       iodepth=1
+       filename=/test.fio
+       size=1G
