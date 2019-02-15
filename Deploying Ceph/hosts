@@ -1,0 +1,17 @@
+[mons] 
+mon1 
+mon2 
+mon3
+
+[mgrs]
+mon1 
+ 
+[osds] 
+osd1 
+osd2 
+osd3 
+ 
+[ceph:children] 
+mons 
+osds
+mgrs 
