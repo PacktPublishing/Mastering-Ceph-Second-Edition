@@ -1,0 +1,7 @@
+nodes = [
+ { :hostname => 'ansible', :ip => '192.168.0.40', :box => 'xenial64' },
+  { :hostname => 'site1-mon1', :ip => '192.168.0.41', :box => 'xenial64' },
+  { :hostname => 'site2-mon1', :ip => '192.168.0.42', :box => 'xenial64' },
+  { :hostname => 'site1-osd1',  :ip => '192.168.0.51', :box => 'xenial64', :ram => 1024, :osd => 'yes' },
+  { :hostname => 'site2-osd1',  :ip => '192.168.0.52', :box => 'xenial64', :ram => 1024, :osd => 'yes' }
+]
