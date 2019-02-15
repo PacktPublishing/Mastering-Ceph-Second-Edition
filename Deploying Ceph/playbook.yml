@@ -1,0 +1,4 @@
+- hosts: mon1 osd1
+  tasks:
+  - name: Echo Variables
+    debug: msg="I am a {{ a_variable }}"
