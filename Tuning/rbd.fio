@@ -1,0 +1,14 @@
+[global]
+ioengine=rbd
+randrepeat=0
+clientname=admin
+pool=rbd
+rbdname=test
+invalidate=0
+rw=write
+bs=1M
+direct=1
+time_based=1
+runtime=30
+numjobs=1
+iodepth=1
