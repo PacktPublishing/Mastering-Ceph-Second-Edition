@@ -49,11 +49,11 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 ### Related products
 * Implementing Microsoft Azure Infrastructure Solutions: Exam Guide 70-533 [[Packt]](https://www.packtpub.com/virtualization-and-cloud/implementing-microsoft-azure-infrastructure-solutions-exam-guide-70-533?utm_source=github&utm_medium=repository&utm_campaign=9781789137958 ) [[Amazon]](https://www.amazon.com/dp/1-789-13795-0)
 
-*  [[Packt]](https://www.packtpub.com/virtualization-and-cloud/practical-devops-second-edition?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1-788-39257-4)
+* Practical DevOps - Second Edition [[Packt]](https://www.packtpub.com/virtualization-and-cloud/practical-devops-second-edition?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1-788-39257-4)
 
 ## Get to Know the Author
 **Nick Fisk**
-Nick Fisk is an IT specialist with a strong history in enterprise storage. Having worked in a variety of roles throughout his career, he has encountered a wide variety of technologies. In 2012, Nick was given the opportunity to focus more on open source technologies, and this is where he got his first exposure to Ceph. Having seen the potential of Ceph as a storage platform and the benefits of moving away from the traditional closed stack storage platforms, Nick pursued Ceph with keen interest. 
+is an IT specialist with a strong history in enterprise storage. Having worked in a variety of roles throughout his career, he has encountered a wide variety of technologies. In 2012, Nick was given the opportunity to focus more on open source technologies, and this is where he got his first exposure to Ceph. Having seen the potential of Ceph as a storage platform and the benefits of moving away from the traditional closed stack storage platforms, Nick pursued Ceph with keen interest. 
 Throughout the following years, his experience with Ceph increased with the deployment of several clusters and enabled him to spend time in the Ceph community, helping others and improving certain areas of Ceph.
 
 
